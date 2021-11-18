@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/portfolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/125f7d6dd8.js" crossorigin="anonymous"></script>
+    <title>Fariza Ahmed</title>
+</head>
+<body>
+    <section id="home" class="header">
+        <nav>
+            <div class="logo">
+                <a href="#home"><i class="fas fa-home"></i></a>
+            </div>
+            <ul id="navList">
+                <li>
+                    <a href="#aboutme">About Me</a>
+                </li>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                  </li>
+            </ul>
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+        <div class="textContainer">
+            <div class="headerText">
+                <h1>Fariza Ahmed</h1>
+                <p>Software Developer</p>
+            </div>
+        </div>
+    </section>
+    <section id="aboutme" class="aboutMe">
+        <div class="info">
+            <h2>About Me</h2>
+            <p>Hi, my name is Fariza Ahmed. I am a recent graduate from UC San Diego with a bachelors in Mathematics-Computer Science. I'm an aspiring Software Developer with a passion for problem solving and excited to jumpstart my career!</p>
+        </div>
+        <div class="school">
+            <img src="https://images.unsplash.com/photo-1625183460745-9e994a3f0a4a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1740&q=80" alt="">
+        </div>
+    </section>
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="cardContainer">
+            <div class="projectCard">
+                <img class="projectImg" src="src/images/game.png" alt="">
+                <h3>2048 Game</h3>
+                <p>Implemented a replica of the popular 2048 puzzle game with HTML, CSS, and JavaScript.</p>
+                <hr>
+                <p class="subtext">
+                    <a class="view" href="https://fariza-ahmed.github.io/2048Replica/game.html">View Here</a>
+                </p>
+            </div>
+            <div class="projectCard">
+                <img class="projectImg" src="src/images/kitchenModel.png" alt="">
+                <h3>3D Kitchen Model</h3>
+                <p>Implemented this animation with transformations and geometric, light, and texture properties using Java and OpenGL.</p>
+                <hr>
+                <p class="subtext">
+                    <a class="view" href="https://fariza-ahmed.github.io/KitchenModel/kitchenModel.html">View Here</a>
+                </p>
+            </div>
+        </div>
+    </section> 
+    <footer id="contact">
+        <h2>Contact</h2>
+        <p>Farizaahmed5@gmail.com</p>
+    </footer>
+    <script src="src/portfolio.js"></script>
+</body>
+</html>
