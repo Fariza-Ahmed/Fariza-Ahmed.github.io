@@ -10,11 +10,10 @@ section {
 .header {
     background-image: url("https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1752&q=80");
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: 50% 35%;
     height: 100vh;
     color: #ddb892;
     font-size: 40px;
-
 }
 
 .logo {
@@ -73,7 +72,7 @@ h1 {
 
 .textContainer {
     display: flex;
-    height: 100%;
+    height: 75%;
     justify-content: center;
     align-items: center;
     text-shadow: 5px 5px 2px #7f5539;
@@ -97,13 +96,18 @@ h2 {
     letter-spacing: 2px;
 }
 
+.info {
+    height: 400px;
+}
+
 .info > p {
     padding: 0 40px 0 0;
     letter-spacing: 2px;
 }
 
 .school > img {
-    width: 500px;
+    width: 300px;
+    height: 400px;
     background-color: peachpuff;
     opacity: 0.8;
     border-radius: 50%;
@@ -170,11 +174,12 @@ hr {
 }
 
 .view {
-    text-decoration: none;
+    text-decoration: underline;
     color: #7f5539;
 }
 
 .view:hover {
+    text-decoration: none;
     text-shadow: 1px 1px 0.5px #582f0e;
 }
 
