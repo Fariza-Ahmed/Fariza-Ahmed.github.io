@@ -1,40 +1,84 @@
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Spline Sans', sans-serif;
     margin: 0;
+    color: #22223b;
 }
 
 section {
-    background-color: #ddb892;
+    background-color: #ffe8d6;
 }
 
 .header {
-    background-image: url("https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1752&q=80");
-    background-repeat: no-repeat;
-    background-position: 50% 35%;
+    background-color: #ffe8d6;
     height: 100vh;
-    color: #ddb892;
-    font-size: 40px;
+}
+
+.introContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 0 25px 400px;
+}
+
+.tech > img {
+    height: 400px;
+    width: 450px;
+}
+
+.me > img{
+    height: 400px;
+    width: 300px;
+    border: solid white 8px;
+    position: relative;
+    top: 100px;
+    right: 250px;
+}
+
+.intro {
+    margin-top: 100px;
+    margin-left: 20px;
+    padding: 20px 20px;
+    height: 250;
+    width: 400px;
+    position: relative;
+    right: 250px;
+}
+
+.hi {
+    background-color: white;
+    position: relative;
+    right: 100px;
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 2px;
+    padding: 5px;
+    width: 330px;
+}
+
+.hiDes {
+    position: relative;
+    margin-right: 10px;
+    font-size: 15px;
+    width: 350px;
+    line-height: 35px;
 }
 
 .logo {
-    margin-left: 10px;
+    margin: 10px 10px 10px 20px;
 }
 
 .logo > a {
+    font-family: 'Licorice', cursive;
     text-decoration: none;
-    color: #ddb892;
-}
-
-footer {
-    background-color: #7f5539;
-    color: #ddb892;
-    text-align: center;
-    padding: 30px;
+    font-size: 50px;
+    letter-spacing: 3px;
+    color: #22223b;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
+    background-color: white;
 }
 
 ul {
@@ -42,89 +86,94 @@ ul {
     list-style-type: none;
     width: 500px;
     justify-content: space-around;
-    font-size: 20px;
-    letter-spacing: 4px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    margin-top: 30px;
 }
 
 li > a {
     text-decoration: none;
-    color: #ddb892;
+    text-transform: uppercase;
+    color: #22223b;
 }
 
 li > a:hover {
-    text-shadow: 1px 1px 1px #7f5539;
+    text-decoration: underline;
 }
 
-h1 {
-    font-size: 90px;
-    margin: 0;
-    font-weight: 600;
+footer {
+    background-color: white;
     text-align: center;
-}
-
-.headerText > p {
-    margin: 0;
-    font-size: 30px;
-    font-weight: 300;
-    text-align: center;
-}
-
-.textContainer {
-    display: flex;
-    height: 75%;
-    justify-content: center;
-    align-items: center;
-    text-shadow: 5px 5px 2px #7f5539;
-    letter-spacing: 10px;
-}
-
-.headerText {
-    margin-bottom: 200px;
+    padding: 30px;
 }
 
 .aboutMe {
     display: flex;
     justify-content: space-between;
     padding: 80px;
-    color: #7f5539;
     align-items: center;
+    background-color: white;
 }
 
 h2 {
-    font-size: 40px;
+    text-transform: uppercase;
+    font-size: 35px;
     letter-spacing: 2px;
+    font-weight: 400;
 }
 
-.info {
-    height: 400px;
+.info, .imgContainer {
+    height: 500px;
 }
 
 .info > p {
     padding: 0 40px 0 0;
     letter-spacing: 2px;
+    width: 600px;
+    line-height: 35px;
+    font-size: 12px;
+
 }
 
 .school > img {
+    width: 400px;
+    height: 300px;
+    position: relative;
+    bottom: 50px;
+    right: 100px;
+    opacity: 0.8;
+}
+
+.amImg > img {
     width: 300px;
     height: 400px;
-    background-color: peachpuff;
-    opacity: 0.8;
-    border-radius: 50%;
+    position: relative;
+    bottom: 200px;
+    left: 50px;
+    border: 10px solid gray;
 }
 
 .projectCard {
     width: 300px;
-    height: 500px;
-    box-shadow: 5px 5px 20px #7f5539;
+    height: 350px;
+    box-shadow: 5px 5px 20px #22223b;
     margin: 10px;
+    border: 10px solid white;
+    border-bottom: 150px solid white;
 }
 
 .projectCard:hover {
-    box-shadow: 10px 10px 20px #582f0e;
+    box-shadow: 10px 10px 20px #22223b;
+}
+
+.projectCard > .des {
+    font-size: 15px;
+    line-height: 20px;
 }
 
 h3 {
     letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 .projectCard > p:nth-of-type(1) {
@@ -136,19 +185,11 @@ h3 {
     flex-direction: column;
     text-align: center;
     padding: 80px;
-    color: #7f5539;
 }
 
 .cardContainer {
     display: flex;
     justify-content: space-around;
-}
-
-@media only screen and (max-width: 1000px) {
-    .cardContainer {
-        display: flex;
-        flex-wrap: wrap;
-    }
 }
 
 .subtext {
@@ -163,23 +204,17 @@ h3 {
     border-radius: 50%;
 }
 
-hr {
-    border: none;
-    border-top: 1px solid #7f5539;
-    overflow: visible;
-    text-align: center;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
 .view {
-    text-decoration: underline;
-    color: #7f5539;
+    font-family: 'Permanent Marker', cursive;
+    text-decoration: none;
+    color: #22223b;
+    position: relative;
+    top: 75px;
+    font-size: 25px;
 }
 
 .view:hover {
-    text-decoration: none;
-    text-shadow: 1px 1px 0.5px #582f0e;
+    text-decoration: underline;
 }
 
 .hamburger {
@@ -190,12 +225,55 @@ hr {
     outline: 0;
 }
 
+@media only screen and (max-width: 1270px) {
+    .school > img, .amImg > img {
+        display: none;
+    }
+
+    .info {
+        text-align: center;
+    }
+
+    .info > p {
+        padding: 0;
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 1000px) { 
+    .tech {
+        display: none;
+    }
+
+    .me {
+        position: relative;
+        bottom: 100px;
+        left: 100px;
+    }
+
+    .hi {
+        font-size: 25px;
+        bottom: 200px;
+        left: 15px;
+        width: 150px;
+    }
+
+    .hiDes {
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 1000px) {
+    .cardContainer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     .hamburger {
         display: block;
         border: 0;
         background-color: transparent;
-        color: #582f0e;
+        color: #22223b;
         font-size: 30px;
         margin: 20px;
         align-self: flex-end;
@@ -208,7 +286,7 @@ hr {
     }
 
     li > a {
-        color: #582f0e;
+        color: #22223b;
     }
 
     ul.show {
@@ -218,31 +296,12 @@ hr {
     nav {
         display: flex;
         flex-direction: column-reverse;
-        background-color: rgba(221, 184, 146, 0.5);
+        background-color: white;
     }
 
     .logo {
         display: none;
-    }
+    } 
 
-    h1 {
-        font-size: 45px; 
-    }
-
-    .headerText > p {
-        font-size: 20px;
-    }
-
-    .info {
-        text-align: center;
-    }
-
-    .info > p {
-        padding: 0;
-    }
-
-    .school > img {
-        display: none;
-    }
-
+    
 }
