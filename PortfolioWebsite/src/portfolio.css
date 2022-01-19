@@ -240,28 +240,6 @@ h3 {
     }
 }
 
-@media only screen and (max-width: 1000px) { 
-    .tech {
-        display: none;
-    }
-
-    .me {
-        position: relative;
-        bottom: 100px;
-        left: 100px;
-    }
-
-    .hi {
-        font-size: 25px;
-        bottom: 200px;
-        left: 15px;
-        width: 150px;
-    }
-
-    .hiDes {
-        display: none;
-    }
-}
 
 @media only screen and (max-width: 1000px) {
     .cardContainer {
@@ -289,6 +267,10 @@ h3 {
         color: #22223b;
     }
 
+    li {
+        padding: 8px 0;
+    }
+
     ul.show {
         display: block;
     }
@@ -303,5 +285,61 @@ h3 {
         display: none;
     } 
 
+    .tech {
+        display: none;
+    }
+
+    .introContainer {
+        padding-left: 200px;
+    }
+
+    .me > img {
+        position: relative;
+        bottom: 100px;
+        left: 100px;
+    }
+
+    .hi {
+        position: relative;
+        bottom: 150px;
+        left: -20px;
+    }
+
+    .hiDes {
+        position: relative;
+        top: 290px;
+        left: -15px;
+        text-align: center;
+    }
+
     
+}
+
+@media only screen and (max-width: 700px) { 
+    .me > img {
+        height: 300px;
+        width: 200px;
+    }
+
+    .hi {
+        position: relative;
+        bottom: 125px;
+        left: 45px;
+    }
+
+    .hiDes {
+        position: relative;
+        top: 250px;
+        left: 40px;
+        text-align: center;
+    }
+
+    .info > p {
+        line-height: 25px;
+    }
+
+    .projectCard > .des {
+        line-height: 15px;
+    }
+
 }
