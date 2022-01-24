@@ -217,11 +217,11 @@ h3 {
     text-decoration: underline;
 }
 
-.hamburger {
+.hamburger, .x {
     display: none;
 }
 
-.hamburger:focus {
+.hamburger:focus, .x:focus {
     outline: 0;
 }
 
@@ -247,7 +247,7 @@ h3 {
         flex-wrap: wrap;
     }
 
-    .hamburger {
+    .hamburger, .x {
         display: block;
         border: 0;
         background-color: transparent;
@@ -255,6 +255,18 @@ h3 {
         font-size: 30px;
         margin: 20px;
         align-self: flex-end;
+    }
+
+    .x {
+        display: none;
+    }
+
+    .x.show {
+        display: block;
+    }
+
+    .hamburger.show {
+        display: none;
     }
 
     ul {
